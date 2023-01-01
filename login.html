@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Login </title>
+    <style>
+        
+        * {
+            font-family: system-ui;
+        }
+
+        body {
+            background: rgb(99,162,242);
+            background: radial-gradient(circle, rgba(99,162,242,1) 0%, rgba(104,149,232,1) 20%, rgba(123,91,187,1) 79%);
+        }
+
+        #parent {
+            width: 30%;
+            height: 580px;
+            margin: auto;
+            margin-top: 150px;
+            border-radius: 40px;
+            background: whitesmoke;
+        }
+
+        #parent > h1 {
+            padding-top: 40px;
+            text-align: center;
+        }
+
+        #parent > div > form {
+            display: grid;
+            padding: 40px;
+            padding-bottom: 10px;
+        }
+
+        input {
+            height: 60px;
+            border-radius: 10px;
+            border: none;
+            margin-bottom: 20px;
+            padding-left: 10px;
+        }
+
+        label {
+            font-weight: bold;
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+
+        input[type ="submit"] {
+            font-size: 25px;
+            font-weight: bold;
+            background: rgb(99,162,242);
+            cursor: pointer;
+            background: radial-gradient(circle, rgba(99,162,242,1) 0%, rgba(104,149,232,1) 20%, rgba(123,91,187,1) 79%);
+        }
+
+        p {
+            text-align: center;
+        }
+
+        span {
+            cursor: pointer;
+            color: rgb(99,162,242);
+        }
+
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <h1> Login </h1>
+        <div>
+            <form action="" onsubmit="alert('Login Successful')">
+                <label for=""> Login ID </label>
+                <input type="text" placeholder="Email or Phone no.">
+                <label for=""> Password </label>
+                <input type="text" placeholder="Password">
+                <input type="submit">
+            </form>
+        </div>
+
+        <p> Forgot <span onclick="window.location.href = `forgot.html`"> Password ?</span> </p>
+        <p> Don't have an account ? <span onclick="window.location.href = `signup.html`"> Signup </span></p>
+    </div>
+</body>
+</html>
